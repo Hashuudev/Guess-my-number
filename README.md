@@ -12,3 +12,9 @@ This JavaScript number guessing game project's main goal is to code a game where
 * CSS
 * HTML
 * Confetti API
+
+# Screenshots
+
+<img width="1440" alt="1" src="https://github.com/Hashuudev/Guess-my-number/assets/94761963/61c3f5bd-21b5-444c-b5ae-3a0e86f4fef2">
+
+<img width="1440" alt="2" src="https://github.com/Hashuudev/Guess-my-number/assets/94761963/cea25359-0db5-4802-b7e7-7e7e905741f4">
