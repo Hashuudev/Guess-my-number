@@ -6,9 +6,9 @@ This JavaScript number guessing game project's main goal is to code a game where
 
 # Built with
 * Math.random()
-DOM manipulations
-Functions
-Conditionals
-CSS
-HTML
-Confetti API
+* DOM manipulations
+* Functions
+* Conditionals
+* CSS
+* HTML
+* Confetti API
