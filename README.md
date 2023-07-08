@@ -3,3 +3,5 @@ Number guessing game: A fun and interactive JavaScript game where players must g
 
 # Project Objective
 This JavaScript number guessing game project's main goal is to code a game where the user must guess a randomly generated number from 1 to 20. Depending on the number input, the user receives different messages until they guess the secret number.
+
+# Built with
