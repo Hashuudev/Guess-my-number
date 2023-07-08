@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+:root {
+  --yellow: rgb(224, 224, 4);
+  --red: rgb(197, 3, 3);
+  --green: rgb(36, 94, 22);
+  --white: rgb(238, 238, 238);
+  --black: rgb(34, 34, 34);
+  --body-font: "Press Start 2P", sans-serif;
+}
+/** Hide input spinner **/
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
+  box-sizing: border-box;
+  font-family: var(--body-font);
+  color: var(--white);
+  background-color: var(--black);
+}
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+image {
+  display: block;
+}
+
+ul,
+ol,
+li {
+  padding: 0;
+  margin: 0;
+}
+/** Header **/
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+header section {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+}
+h1 {
+  color: var(--yellow);
+  line-height: 3rem;
+}
+h2 {
+  line-height: 3rem;
+}
+
+.again {
+  transition: all ease-out 0.4s;
+}
+.secret-number {
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+}
+.hidden-number {
+  background-color: var(--white);
+  font-size: 2rem;
+  color: var(--black);
+  padding: 2rem;
+  text-align: center;
+}
+.hidden-number::after {
+  content: "";
+  width: 100%;
+  background-color: var(--white);
+  height: 1.5rem;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: -1;
+}
+/** Main Container **/
+.main-container {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin: 0 auto;
+  margin-top: 15%;
+  margin-bottom: 10%;
+}
+.right,
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+/** New Class - Win Message **/
+.win-message {
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.number-input {
+  background: none;
+  border: 4px solid var(--white);
+  font-family: inherit;
+  color: inherit;
+  font-size: 3rem;
+  padding: 2rem;
+  width: 15rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.btn {
+  border: none;
+  background-color: var(--white);
+  color: var(--black);
+  font-family: inherit;
+  padding: 2rem 3rem;
+  cursor: pointer;
+  transition: all ease-out 0.4s;
+}
+
+.label-score {
+  margin-bottom: 2rem;
+}
+
+/** Media Queries **/
+@media (hover: hover) {
+  .submit-number:hover {
+    background-color: var(--green);
+    transition: all ease-out 0.4s;
+    color: var(--white);
+  }
+  .again:hover {
+    background-color: var(--red);
+    transition: all ease-out 0.4s;
+    color: var(--white);
+  }
+}
+
+@media screen and (min-width: 801px) {
+  header section {
+    flex-direction: row;
+  }
+  .main-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 5%;
+  }
+  .main-container.winner {
+    grid-template-columns: 1fr;
+  }
+}
